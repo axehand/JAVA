@@ -9,6 +9,10 @@ public class Application4 {
         app4.testMethod("홍길동", 20, '남');
 
         /* 목차. 2. 변수에 저장된 값을 전달하여 호출할 수 있다. */
+        String name = "유관순";
+        int age = 20;
+        char gender = '여';
+        app4.testMethod(name,age,gender);
     }
 
     private void testMethod(String name, int age, char gender) {
