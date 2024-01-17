@@ -13,9 +13,10 @@ public class User {
     }
 
     public User(String id, String pwd, String name, Date enrollDate) {
-        this.id = id;
-        this.pwd = pwd;
-        this.name = name;
+//        this.id = id;
+//        this.pwd = pwd;
+//        this.name = name;
+//        this(id,pwd,name);
         this.enrollDate = enrollDate;
     }
 
