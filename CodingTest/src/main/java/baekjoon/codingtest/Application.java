@@ -16,5 +16,6 @@ public class Application {
         int count = 0;
         result_n = Arrays.stream(result_n).distinct().toArray();
         System.out.println(result_n.length);
+
     }
 }

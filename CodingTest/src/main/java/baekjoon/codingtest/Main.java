@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
-
+//hashSet대신 treeset을 사용하면 더 간단하게 끝낼 수 있다.
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

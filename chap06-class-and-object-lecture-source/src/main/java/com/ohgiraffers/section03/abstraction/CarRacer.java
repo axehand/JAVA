@@ -11,14 +11,14 @@ public class CarRacer {
     }
 
     public void stepAccelator() {
-       this.myCar.go();
+        myCar.go();
     }
 
     public void stepBreak() {
-        this.myCar.stop();
+        myCar.stop();
     }
 
     public void turnOff() {
-        this.myCar.turnOff();
+        myCar.turnOff();
     }
 }

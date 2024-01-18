@@ -4,14 +4,13 @@ import java.util.Arrays;
 
 public class Application2 {
     public static void main(String[] args) {
-        int[][] iArr = new int[][]{{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15}};
-        int[][] iArr2 = {{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15}};
+        int[][] iArr = new int[][]{{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}};
+        int[][] iArr2 = {{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}};
 
-
-        /* 설명. 내가 2차원 배열 출력을 커스터마이징해서 활용하고 싶을 때 */
+        /* 설명. 내가 2차원 배열 출력을 커스터마이징해서 활용한 출력 */
         for (int i = 0; i < iArr.length; i++) {
-            for (int j = 0; j < iArr[i].length; j++) {
-                System.out.print("iArr[" + i + "][" + j + "] = " + iArr[i][j] + ' ');
+            for (int j = 0; j < iArr[i].length ; j++) {
+                System.out.print("iArr[" + i + "][" + j + "] = " + iArr[i][j] + " ");
             }
             System.out.println();
         }
