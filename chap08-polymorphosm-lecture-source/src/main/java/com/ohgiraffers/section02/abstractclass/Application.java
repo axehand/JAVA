@@ -24,6 +24,8 @@ public class Application {
         SmartPhone smartPhone = new SmartPhone();
 
         Product product = new SmartPhone();     // 다형성 적용
-        product.abstractMethod();               // 동적 바인징에 의한 자식 클래스의 오버라이딩 메소드 실행
+        product.abstractMethod();               // 동적 바인징에 의한 자식
+
+
     }
 }
