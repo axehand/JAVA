@@ -1,4 +1,4 @@
-package com.ohgiraffers.section03.use;
+package com.ohgiraffers.section03.uses;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
