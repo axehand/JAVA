@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Application {
     public static void main(String[] args) {
 
-        /* 수업목표. 객체지향 프로그램밍에 대해 이해하고 객체와 클래스를 설계하여 프로그래밍 할 수 있다. */
+        /* 수업목표. 객체지향 프로그래밍에 대해 이해하고 객체와 클래스를 설계하여 프로그래밍 할 수 있다. */
         /* 필기.
          *  추상화란?
          *   공통된 부분을 추출하고 공통되지 않고 불필요한 부분을 제거한다는 의미를 가지며, 추상화의 목적은

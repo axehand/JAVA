@@ -24,7 +24,7 @@ public class Application {
         SmartPhone smartPhone = new SmartPhone();
 
         Product product = new SmartPhone();     // 다형성 적용
-        product.abstractMethod();               // 동적 바인징에 의한 자식
+        product.abstractMethod();               // 동적 바인딩에 의한 자식
 
 
     }
