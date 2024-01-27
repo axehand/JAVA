@@ -10,7 +10,6 @@ public class Application {
         File file = new File("src/main/java/com/ohgiraffers/section01/file/test.txt");
 
         try {
-
             /* 설명. 생성 될 떄 인지한 파일의 경로 및 파일명을 바탕으로 파일을 생성 후 성공 여부를 반환한다. */
             boolean isSuccess = file.createNewFile();
             System.out.println("파일 생성 여부 : " + isSuccess);

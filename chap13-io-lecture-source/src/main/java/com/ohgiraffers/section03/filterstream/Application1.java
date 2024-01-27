@@ -9,16 +9,17 @@ public class Application1 {
         /* 필기.
          *  내부적으로 버퍼를 활용해서 입출력 성능을 향상 시킨다.
          *  추가적인 메소드가 제공된다.
-        * */
-
+         * */
 
         /* 설명. BufferedWriter를 활용한 한 줄씩 출력하기 */
         BufferedWriter bw = null;
         try {
-            bw = new BufferedWriter(new FileWriter("src/main/java/com/ohgiraffers/section03/filterstream/testBuffered.txt",true));
+            bw = new BufferedWriter(
+                    new FileWriter("src/main/java/com/ohgiraffers/section03/filterstream/testBuffered.txt", true));
 
-            bw.write("한글입력\n");
-            bw.write("한글입력");
+            bw.write("제목: 세종대왕님\n");
+            bw.write("드디어 세종대왕님이 만족하시겠네!\n");
+            bw.write("드디어 세종대왕님이 만족하시겠네!");
 
             /* 필기.
              *  버퍼를 이용해서 출력을 하는 경우 버퍼 공간이 가득 차지 않으면 내보내기(출력)가 안되는 경우가 있다.
@@ -27,38 +28,34 @@ public class Application1 {
              *
              * 필기.
              *  stream을 close()하면 내부적으로 flush()를 호출하긴 함.
-            * */
-//            bw.flush();
+             * */
+            bw.flush();
 
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             try {
-                if(bw != null) {
-                    bw.close();
-                }
+                if (bw != null) bw.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }
 
-
         /* 설명. BufferedReader를 활용해 한 줄(개행 문자 전까지)씩 읽어오기 */
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader("src/main/java/com/ohgiraffers/section03/filterstream/testBuffered.txt"));
+            br = new BufferedReader(
+                    new FileReader("src/main/java/com/ohgiraffers/section03/filterstream/testBuffered.txt"));
 
             String str = "";
-            while((str = br.readLine()) != null){
+            while ((str = br.readLine()) != null) {
                 System.out.println(str);
             }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }finally {
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
             try {
-                if(br != null)br.close();
+                if (br != null) br.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
