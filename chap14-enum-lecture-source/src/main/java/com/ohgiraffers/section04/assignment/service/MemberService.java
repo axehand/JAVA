@@ -1,9 +1,13 @@
 package com.ohgiraffers.section04.assignment.service;
 
+import com.ohgiraffers.section04.assignment.aggregate.BloodType;
+import com.ohgiraffers.section04.assignment.aggregate.MBTI;
 import com.ohgiraffers.section04.assignment.aggregate.Member;
 import com.ohgiraffers.section04.assignment.repository.MemberRepository;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 /* 설명. 트랜잭션 성공실패 여부 확인 및 회원 관련 비즈니스 로직 처리하는 클래스 */
 public class MemberService {
@@ -31,5 +35,16 @@ public class MemberService {
         } else {
             System.out.println("조회된 회원은 : " + selectedMember);
         }
+    }
+
+
+    public void addMember() {
+        mr.addMember();
+    }
+
+    public void deleteMember(int memNO) {
+    }
+
+    public void login() {
     }
 }

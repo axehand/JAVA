@@ -11,19 +11,21 @@ public class Member implements Serializable {
     private int age;                    // 회원나이
     private String[] hobbies;           // 회원취미들
     private BloodType bloodType;        // 혈액형
+    private MBTI mbti;
 
     /* 설명. 엔티티 클래스는 setter를 꼭 필요한 것만 만든다. */
 
     public Member() {
     }
 
-    public Member(int memNo, String id, String pwd, int age, String[] hobbies, BloodType bloodType) {
+    public Member(int memNo, String id, String pwd, int age, String[] hobbies, BloodType bloodType, MBTI mbti) {
         this.memNo = memNo;
         this.id = id;
         this.pwd = pwd;
         this.age = age;
         this.hobbies = hobbies;
         this.bloodType = bloodType;
+        this.mbti = mbti;
     }
 
     @Override
@@ -35,6 +37,7 @@ public class Member implements Serializable {
                 ", age=" + age +
                 ", hobbies=" + Arrays.toString(hobbies) +
                 ", bloodType=" + bloodType +
+                ", mbti=" + mbti +
                 '}';
     }
 
