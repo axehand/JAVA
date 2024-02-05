@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Application3 {
+public class Application3_1 {
     public static BufferedReader toBufferedReader(String str){
         InputStream is = new ByteArrayInputStream(str.getBytes());
         return new BufferedReader(new InputStreamReader(is));

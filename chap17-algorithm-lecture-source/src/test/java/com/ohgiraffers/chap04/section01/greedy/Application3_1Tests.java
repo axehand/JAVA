@@ -49,7 +49,7 @@ public class Application3_1Tests {
     @ParameterizedTest
     @MethodSource("provideSource")
     public void greedy4test(String input, Integer output) throws Exception {
-        Integer result = Application3.solution(input);
+        Integer result = Application3_1.solution(input);
         Assertions.assertEquals(output, result);
     }
 }

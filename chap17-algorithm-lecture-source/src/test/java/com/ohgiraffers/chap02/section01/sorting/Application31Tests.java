@@ -13,13 +13,13 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-public class Application3Tests {
+public class Application31Tests {
 
     private static int input1, input2;
     private static int[] act1, act2;
     private static int[] exp1, exp2;
 
-    public Application3Tests() {
+    public Application31Tests() {
     }
 
     @BeforeAll
