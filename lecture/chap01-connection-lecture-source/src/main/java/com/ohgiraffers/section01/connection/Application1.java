@@ -17,7 +17,7 @@ public class Application1 {
             throw new RuntimeException(e);
         }finally {
             try {
-                if(con!= null || !con.isClosed())
+                if(con!= null && !con.isClosed())
                     con.close();
             } catch (SQLException e) {
                 throw new RuntimeException(e);
