@@ -15,13 +15,12 @@ public class RequestWrapper extends HttpServletRequestWrapper {
 
         /* 설명. 'password'라는 키값으로 getParameter 사용 시에 그 반환값은 암호화 해서 반환 */
         String value = "";
-        if("password".equals(key)){
+        if("password".equals(key)) {
             BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
             value = passwordEncoder.encode(super.getParameter("password"));
-        }else{                      // 그 외의 키 값 사용 시에는 기존대로 동작
+        }else {                      // 그 외의 키 값 사용 시에는 기존대로 동작
             value = super.getParameter(key);
         }
-
         return value;
     }
 }
