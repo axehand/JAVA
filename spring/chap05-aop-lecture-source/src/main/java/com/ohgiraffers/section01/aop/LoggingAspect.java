@@ -87,10 +87,22 @@ public class LoggingAspect {
     }
 
     /* 설명. 5. Around Advice */
+    /* 설명.
+     *  이 어드바이스는 조인포인트를 완전히 장악하기 때문에 앞서 살펴 본 어드바이스 모두
+     *  Around 어드바이스로 조립할 수 있다.
+     *  심지어 원본 조인 포인트를 언제 실행할지, 실행 자체를 안할지, 계속 실행할지 여부까지도 제어한다.
+     *  AroundAdvice의 조인포인트 매개변수는 ProceedingJoinPoint로 고정되어 있다.
+     *  JoinPoint의 하위 인터페이스로 원본 조인포인트의 진행 시점을 제어할 수 있다.
+     *  조인포인트를 진행하는 호출을 잊는 경우가 자주 발생하기 때문에 주의해야하며
+     *  가능한 최소한의 요건을 충족하면서도 가장 기능이 약한 어드바이스를 쓰는게 바람직하다.
+    * */
     @Around("logPointcut()")
-    public Object logAround(ProceedingJoinPoint joinPoint){
-        Object result = null;
+    public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable{
+        System.out.println("Around Before : " + joinPoint.getSignature().getName());
+        Object result = joinPoint.proceed();        // 타겟 메소드 동작
+        System.out.println("Around After : " + joinPoint.getSignature().getName());
 
+        /* 설명. 실행된 타겟 메소드 반환(다른 어드바이스가 다시 실행할 수 있도록 반환한다.) */
         return result;
     }
 }
