@@ -15,10 +15,9 @@ public class MenuService {
         SqlSession sqlSession = getSqlSession();
 
         /* 설명.
-         *  SqlSession을 활용해서 인터페이스의 하위구현체(DAO에 해당하는 객체)를 만들어
+         *  SqlSession을 활용해서 인터페이스의 하위 구현체(DAO에 해당하는 객체)를 만들어
          *  쿼리를 실행
         * */
-
         menuMapper = sqlSession.getMapper(MenuMapper.class);
         List<MenuDTO> menuList = menuMapper.selectAllMenus();
 
