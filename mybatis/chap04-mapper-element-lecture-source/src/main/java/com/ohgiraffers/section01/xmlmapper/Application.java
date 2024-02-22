@@ -1,6 +1,4 @@
 package com.ohgiraffers.section01.xmlmapper;
-
-import javax.lang.model.util.ElementScanner6;
 import java.util.Scanner;
 
 public class Application {
@@ -41,7 +39,6 @@ public class Application {
                     break;
                 case 3:
                     elementService.selectResultMapCollectionTest();
-
             }
 
         } while(true);
