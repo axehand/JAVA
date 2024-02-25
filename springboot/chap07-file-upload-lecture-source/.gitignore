@@ -3,6 +3,7 @@ HELP.md
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
+!**/src/main/resources/
 !**/src/test/**/build/
 
 ### STS ###
@@ -18,6 +19,7 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
+application.properties
 .idea
 *.iws
 *.iml
