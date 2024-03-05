@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44ec3ae8-b9a3-444e-a94a-dcb974c92970" name="변경" comment="" />
+    <list default="true" id="44ec3ae8-b9a3-444e-a94a-dcb974c92970" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/springboot/chap08-rest-api-lecture-source/src/main/java/com/ohgiraffers/restapi/section01/response/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/chap08-rest-api-lecture-source/src/main/java/com/ohgiraffers/restapi/section01/response/ResponseRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/chap08-rest-api-lecture-source/src/main/java/com/ohgiraffers/restapi/section01/response/get.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/src/test/java/com/ohgiraffers/section01/simple/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/src/test/java/com/ohgiraffers/section01/simple/SimpleJPQLTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap04-jpql-lecture-source/src/test/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpa/chap02-mapping-lecture-source/src/test/java/com/ohgiraffers/section04/enumtype/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpa/chap02-mapping-lecture-source/src/test/java/com/ohgiraffers/section04/enumtype/Member.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +58,7 @@
       <updated>1706659477945</updated>
       <workItem from="1706659478964" duration="41000" />
       <workItem from="1708391319188" duration="1000" />
+      <workItem from="1709189289347" duration="3000" />
     </task>
     <servers />
   </component>

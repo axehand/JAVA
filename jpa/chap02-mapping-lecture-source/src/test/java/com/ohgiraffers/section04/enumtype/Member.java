@@ -34,7 +34,7 @@ public class Member {
     private java.util.Date enrollDate;
 
     @Column(name="member_role")
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
 //    @Enumerated(EnumType.STRING)
 //    private String memberRole;
     private RoleType memberRole;
