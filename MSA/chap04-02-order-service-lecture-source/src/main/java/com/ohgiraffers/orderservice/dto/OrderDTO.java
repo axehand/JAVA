@@ -3,6 +3,7 @@ package com.ohgiraffers.orderservice.dto;
 
 import com.ohgiraffers.orderservice.aggregate.OrderMenu;
 import lombok.Data;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -15,6 +16,6 @@ public class OrderDTO {
     private String orderTime;
     private int totalOrderPrice;
 
-    private List<OrderMenu> orderMenus;
+    private List<OrderMenuDTO> orderMenus;
 
 }
