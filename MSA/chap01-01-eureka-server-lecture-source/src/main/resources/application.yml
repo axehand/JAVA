@@ -1,6 +1,6 @@
 # Eureka 서버를 Web Service로 등록
 server:
-  port: 8888
+  port: 8999
 
 # 각각의 micro service 아이디 등록
 spring:

@@ -49,13 +49,12 @@ spring:
         - id: user-service
           uri: lb://SWCAMP-USER-SERVICE
           predicates:
-            - Path=/user-service/**
-            - Method=GET
+            - Path=/user-service/actuator/**
+            - Method=POST
           filters:
             - RewritePath=/user-service/(?<segment>.*), /$\{segment}
 
               # 현재 상황의 라우팅에서 토큰을 들고와서 요청하는지 판단하기 위한 필터
-            - AuthorizationHeaderFilter
 
         - id: user-service
           uri: lb://SWCAMP-USER-SERVICE
@@ -90,7 +89,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8888/eureka
+      defaultZone: http://localhost:8999/eureka
 
 token:
   secret: l1Z5I9WufSD5qM0UTHXDJa1kaGxBlyhKMbx+ONkqzeRTlKdF8Bq37mA3Z8nhjRlwVUrL/u3bdkFeamIrUoWvVw==

@@ -29,7 +29,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8888/eureka
+      defaultZone: http://localhost:8999/eureka
 
 
 
@@ -37,9 +37,15 @@ eureka:
 swcamp:
   message: Let's do msa!
 
-token:
-
-  # JWT 토큰의 만료시간
-  expiration_time: 43200000
-
-  secret: l1Z5I9WufSD5qM0UTHXDJa1kaGxBlyhKMbx+ONkqzeRTlKdF8Bq37mA3Z8nhjRlwVUrL/u3bdkFeamIrUoWvVw==
+#token:
+#
+#  # JWT 토큰의 만료시간
+#  expiration_time: 43200000
+#
+#  secret: l1Z5I9WufSD5qM0UTHXDJa1kaGxBlyhKMbx+ONkqzeRTlKdF8Bq37mA3Z8nhjRlwVUrL/u3bdkFeamIrUoWvVw==
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans
+# actuator 추가 후

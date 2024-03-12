@@ -1,0 +1,12 @@
+server:
+  port: 8887
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///Users/seoseung-yeob/Documents/GIT_JAVA/MSA/config
