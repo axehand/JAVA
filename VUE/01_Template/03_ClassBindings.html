@@ -34,25 +34,27 @@
         const {createApp, ref, reactive} = Vue;
 
         createApp({
-            setup(){
+            setup() {
                 const isActive = ref(true);
                 const isSize = ref(true);
+
                 return {
                     isActive,
                     isSize
                 }
             }
         }).mount('#step01');
+
         /* composition api(컴포지션 api)는 view 인스턴스를 반환하며 View Model에 해당된다. */
         createApp({
-            setup(){
+            setup() {
                 const isActive = ref(true);
                 const isSize = ref(true);
 
                 const classObj = reactive({
                     active: isActive,
                     static: isSize
-                })
+                })                
 
                 return {
                     classObj
@@ -60,6 +62,5 @@
             }
         }).mount('#step02');
     </script>
-
 </body>
 </html>

@@ -7,28 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-
     <div id="step01">
         <span>message: {{ msg }}</span>
         <hr>
         <div v-text="msg"></div>
-        <div v-text="'message : ' + msg">asd</div>
-        <div id="inJs"></div>
+        <div v-text="'message: ' + msg">abc</div>
+        <div id="inJs">zzzzzzzz</div>
 
         <!--
             {{}}은 html 스크립트를 일반 텍스트로 해석하며 실제 html을 출력하기 위해서는
             v-html 옵션을 이용하여 html 구문임을 명시해야 한다.
         -->
-
         <hr>
         <h5>Raw Html</h5>
-        <p>Using Text Interpolation : {{ rawHtml }} </p>
-        <p>Using v-html directive : <span v-html="rawHtml"></span></p>
+        <p>Using text interpolation: {{ rawHtml }}</p>
+        <p>Using v-html directive: <span v-html="rawHtml"></span></p>
     </div>
+    
 
     <script>
-        document.getElementById("inJs").innerText ='message : ' + 'abc';
-
+        document.getElementById("inJs").innerText = 'message: ' + 'abc';
 
         const {createApp} = Vue
 
@@ -36,11 +34,12 @@
         createApp({
             setup() {
                 return {
-                    msg : "hello world",
-                    rawHtml : "<span style='color:red'>hello world</span>"
+                    msg: "hello world3213213123",
+                    rawHtml: "<span style='color:red'>hello world</span>"
                 }
             }
         }).mount('#step01')
+        
     </script>
 </body>
 </html>
